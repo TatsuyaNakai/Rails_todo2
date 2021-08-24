@@ -2,7 +2,8 @@ class Api::V1::TodosController < ApplicationController
   def index
     todos = Todo.order(updated_at: :desc)
     render json: todos
-    # json形式で渡す配列を渡す。
+    # json形式で配列を渡す。今回でいうと、todosをJSON形式で渡してる。
+    
   end
 
   def show
