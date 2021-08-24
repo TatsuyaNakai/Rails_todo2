@@ -58,6 +58,7 @@ function AddTodo(props) {
 		const { name, value } = e.target;
 		//ここのnameは、e.target.nameのこと、inputのname属性で決まる。
 		setTodo({ ...todo, [name]: value });
+		// ブラケット記法でキーを宣言してあげる必要がある。
 		//展開して、後ろから同じキーで新しい値を入れると、上書きされる。
 		// 今回でいうと、name:valueが上書きされる。
 	};
